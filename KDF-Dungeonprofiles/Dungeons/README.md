@@ -8,3 +8,6 @@
 ## Notes
 * Min iLvl may not be feasible on every single dungeons but it is a work in progress
 * If you have contributions, contact me in the Dungeons Framework Channel of Kitanoi's Discord
+
+## Changelog
+* 02/11/2025: Changed The Swallow's Compass & The Temple of the Fist to use Minion's new meshes instead

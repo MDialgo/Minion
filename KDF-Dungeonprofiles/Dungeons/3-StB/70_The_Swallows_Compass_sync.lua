@@ -1,6 +1,6 @@
 local tbl = {
 	name = "The Swallow's Compass",
-	mesh = "[DF] The Swallow's Compass",
+	mesh = "[Dungeon] The Swallow's Compass v2",
 	dutyid = 768,
 	level = 70,
 	expansion = 4,

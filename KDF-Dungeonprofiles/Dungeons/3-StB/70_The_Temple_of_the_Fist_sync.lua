@@ -1,6 +1,6 @@
 local tbl = {
 	name = "The Temple of the Fist",
-	mesh = "The Temple of the Fist",
+	mesh = "[Dungeon] The Temple of the Fist",
 	dutyid = 663,
 	level = 70,
 	expansion = 4,
