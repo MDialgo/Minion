@@ -5,7 +5,6 @@
 | Synced | _**31/31**_ | _**18/18**_ | _**15/15**_ | 0/13 | 0/13 | 0/13 |
 
 ## Notes
-* Min iLvl may not be feasible on every single dungeons but it is a work in progress
 * If you have contributions, contact me in the Dungeons Framework Channel of Kitanoi's Discord
 
 ## Changelog
