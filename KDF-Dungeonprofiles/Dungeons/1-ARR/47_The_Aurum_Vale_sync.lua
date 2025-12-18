@@ -1,7 +1,7 @@
 local tbl = {
 	name = "The Aurum Vale",
-	mesh = "[HM] - The Aurum Vale",
-	dutyid = 172,
+	mesh = "[Dungeon] Aurum Vale v2",
+	dutyid = 1331,
 	level = 47,
 	expansion = 2,
 	creator = "Kitanoi",

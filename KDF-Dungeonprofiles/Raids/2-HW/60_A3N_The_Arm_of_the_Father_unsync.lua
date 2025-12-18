@@ -16,7 +16,10 @@ local tbl = {
 		[2] = {contentid = 478, priority = 2, type = "Loot 2"},
 	},
 	enemytargetdistance = 50,
-	prioritytarget = {},
+	prioritytarget = {
+		[1] = {contentid = 3769, priority = 1, type = "Piston Lubricant"},
+		[2] = {contentid = 3770, priority = 2, type = "Gear Lubricant"},
+	},
 	advancedavoid = {
 		[1] = {castingid = 3831, type = "movebehind"},
 	},

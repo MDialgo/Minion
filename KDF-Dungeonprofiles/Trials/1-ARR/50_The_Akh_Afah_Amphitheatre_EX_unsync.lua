@@ -12,7 +12,9 @@ local tbl = {
 		[1] = {contentid = 366, priority = 1, type = "Treasure Coffer"},
 	},
 	enemytargetdistance = 50,
-	prioritytarget = {},
+	prioritytarget = {
+		[1] = {contentid = 2995, priority = 1, type = "Ice Soldier"},
+	},
 	tankat= {},
 	advancedavoid = {
 		[1] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = "if HasBuff(Player.id,604) then Player:Stop() d('Frozen Floor, not moving.') end"},
