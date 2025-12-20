@@ -57,7 +57,7 @@ local tbl = {
 	dontclearfriendlytargets = {2000423,2000425,2000421,2000419,2000427,2000428},
 	advancedavoid =	{
 		[1] = {type = "custom", customdetails = "function", functionname = "Boss 1 Doom Dispell", functioncode = [[
-				local hasdoom = HasBuff(Player.id, 1970)
+				local hasdoom = HasBuff(Player.id, 5187)
 				local AOECount = KitanoiFuncs.HowManyAOES(true)
 				if (hasdoom and AOECount == 0) then
 					local ents = KitanoiFuncs.MEntityList("contentid=2000866;2000867;2000868")
@@ -93,5 +93,6 @@ local tbl = {
 	pullenemyoutofpuddle = false,
 	enemylos = true,
 }
+
 
 return tbl
