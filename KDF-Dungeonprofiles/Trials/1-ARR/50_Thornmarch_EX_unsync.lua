@@ -31,7 +31,7 @@ local tbl = {
 		[6] = {contentid = 722, priority = 5, type = "BLM"}, -- Pukla Puki the Pomburner
 		[7] = {contentid = 724, priority = 6, type = "ROG"}, -- Pukna Pako the Tailturner
 	},
-	avoidentity= {},
+	avoidentity = {},
 }
 
 return tbl
