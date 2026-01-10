@@ -6,25 +6,30 @@ local tbl = {
 	expansion = 3,
 	creator = "Koyote",
 	notes = "",
-	hacks = false,
 	queuetype = 2,
+	FFA = false,
+	hacks = false,
+	requeuetimer = 10,
 	objectivedestinations = {
-		[1] = {objective = 1, pos = {x=100,y=0,z=100}},
+		[1] = {objective = 1, pos = {x = 100, y = 0, z = 100}},
 	},
-	forcemeleerange= {3660},
 	interacts = {
-		[1] = {contentid = 472, priority = 1, type = "Loot"}, -- Mount & Orchestrion & Craft Material
+		[1] = {contentid = 472, priority = 1, type = "Loot"},
+		-- Hive Weapons, Hive Forewing, Rose Lanner Whistle, Faded Copy of The Hand That Gives the Rose & Faded Copy of Unbending Steel
 	},
+	bossids = {
+		3660, -- Ravana -- Ravana Card & (Ravana's Forewing (Synced Only))
+	},
+	forcemeleerange = {3660},
 	enemytargetdistance = 50,
 	prioritytarget = {},
-	tankat= {
-		[1] = {contentid = 3660, frompercent = 100, topercent = 1, pos = {x= 0.77, y= 0, z= -0}, desc = "Tank at this pos from 100-1%"},
+	tankat = {
+		[1] = {contentid = 3660, frompercent = 100, topercent = 1, pos = {x = 0.77, y = 0, z = -0}, desc = "Tank at this pos from 100-1%"},
 	},
 	advancedavoid = {},
 	hasbuff = {},
 	overheadmarkers = {},
 	excludeavoid = {},
-	finaldestination = {x= -316, y= 5.6, z= 312},
 }
 
 return tbl

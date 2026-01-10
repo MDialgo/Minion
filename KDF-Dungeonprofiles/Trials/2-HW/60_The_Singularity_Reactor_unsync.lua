@@ -6,19 +6,23 @@ local tbl = {
 	expansion = 3,
 	creator = "Rinn",
 	notes = "",
-	hacks = false,
 	queuetype = 2,
+	FFA = false,
+	hacks = false,
+	requeuetimer = 10,
 	objectivedestinations = {
-		[1] = {objective = 1, pos = {0.00, y= 0.00, z= 0.4}},
+		[1] = {objective = 1, pos = {x = 0.00, y = 0.00, z = 0.4}},
 	},
 	interactdistance = 50,
 	interacts = {},
+	bossids = {
+		3632, -- King Thordan
+	},
 	enemytargetdistance = 50,
-	bossids = {3622},
 	prioritytarget = {
 		[1] = {contentid = 3641, priority = 1, type = "Meteor"},
 	},
-	avoidentity= {},
+	avoidentity = {},
 	advancedavoid = {},
 	excludeavoid = {4219,4221,4220,4218},
 }
