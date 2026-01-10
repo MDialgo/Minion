@@ -5,25 +5,30 @@ local tbl = {
 	level = 50,
 	expansion = 2,
 	creator = "Rinn",
-	notes="",
-	hacks = false,
+	notes = "",
 	queuetype = 2,
+	FFA = false,
+	hacks = false,
+	requeuetimer = 10,
 	objectivedestinations = {
-		[1] = {objective = 1, pos = {x=1.14, y= -2.03, z= -18.00}},
+		[1] = {objective = 1, pos = {x = 1.14, y = -2.03, z = -18.00}},
 	},
 	interactdistance = 50,
 	interacts = {
 		[1] = {contentid = 201, priority = 1, type = "Loot"},
+		-- Garuda Weapons
+	},
+	bossids = {
+		1644, -- Garuda -- Garuda Card & (Garuda's Feather (Synced Only))
 	},
 	enemytargetdistance = 50,
-	bossids = {1644},
 	prioritytarget = {
 		[1] = {contentid = 1644, priority = 3, type = "Garuda"},
 		[2] = {contentid = 1645, priority = 1, type = "Suparna"},
 		[3] = {contentid = 1646, priority = 2, type = "Chirada"},
 	},
 	ignoretarget = {1647,1648},
-	avoidentity= {},
+	avoidentity = {},
 	advancedavoid = {},
 }
 
