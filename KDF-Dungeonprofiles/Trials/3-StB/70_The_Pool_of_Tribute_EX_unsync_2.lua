@@ -7,14 +7,19 @@ local tbl = {
 	creator = "Kitanoi",
 	notes = "Meshes Required",
 	queuetype = 2,
+	FFA = false,
 	hacks = false,
+	requeuetimer = 10,
 	objectivedestinations = {
-		[1] = {objective = 1, pos = { x = -0.76, y = -0.12, z = -12.85} },
+		[1] = {objective = 1, pos = {x = -0.76, y = -0.12, z = -12.85}},
 	},
 	interacts = {
-		[1] = {contentid = 916, priority = 1, type = "Loot"}, -- Mount & Orchestrion & Craft Material
+		[1] = {contentid = 916, priority = 1, type = "Loot"},
+		-- Susano Weapons, Blade of Revelry, Reveling Kamuy Fife & Faded Copy of Revelation
 	},
-	bossids = {6221},
+	bossids = {
+		6221, -- Susano -- Susano Card
+	},
 	forcemeleerange = {6221},
 	enemytargetdistance = 50,
 	prioritytarget = {
@@ -28,7 +33,7 @@ local tbl = {
 	},
 	advancedavoid = {},
 	hasbuff = {
-		[1] = {type = "move", buffid = 1273, pos = {x = -11.04,y = -0.12,z = 2.42} },
+		[1] = {type = "move", buffid = 1273, pos = {x = -11.04,y = -0.12,z = 2.42}},
 	},
 	overheadmarkers = {},
 	excludeavoid = {},

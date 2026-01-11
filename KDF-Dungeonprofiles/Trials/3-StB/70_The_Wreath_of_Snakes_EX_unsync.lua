@@ -1,27 +1,33 @@
 local tbl = {
 	name = "Seiryu Ex",
+	mesh = "",
 	dutyid = 825,
 	level = 70,
 	expansion = 4,
 	creator = "Kitanoi",
 	notes = "",
 	queuetype = 2,
+	FFA = false,
+	hacks = false,
 	requeuetimer = 10,
 	objectivedestinations = {
-		{objective = 1,	pos = {x = 100, y = 0, z = 100} },
+		[1] = {objective = 1, pos = {x = 100, y = 0, z = 100}},
 	},
 	interactdistance = 50,
 	interacts = {
-		{contentid = 1122, priority = 1, type = "Loot"}, -- Mount & Orchestrion & Craft Material
+		[1] = {contentid = 1122, priority = 1, type = "Loot"},
+		-- Seiryu Weapons, Seiryu's Scale, Hallowed Kamuy Fife & Faded Copy of From the Dragon's Wake
 	},
-	bossids = {},
+	bossids = {
+		7922, -- Seiryu -- Seiryu Card
+	},
 	forcemeleerange = {},
 	enemytargetdistance = 50,
 	prioritytargetdistance = 55,
 	prioritytarget = {},
 	tankat = {},
 	advancedavoid = {
-		{customdetails = "libraryfunction", functioncode = "KitanoiFuncs.GetSeiryu()", type = "custom"},
+		[1] = {customdetails = "libraryfunction", functioncode = "KitanoiFuncs.GetSeiryu()", type = "custom"},
 	},
 	hasbuff = {},
 	overheadmarkers = {},

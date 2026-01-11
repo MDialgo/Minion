@@ -7,17 +7,19 @@ local tbl = {
 	creator = "Koyote#6642",
 	notes = "",
 	queuetype = 2,
+	FFA = false,
 	hacks = false,
+	requeuetimer = 10,
 	objectivedestinations = {
-		[1] = {objective = 1, pos = {x=100,y=0,z=100} },
+		[1] = {objective = 1, pos = {x = 100, y = 0, z = 100}},
 	},
 	interacts = {
 		[1] = {contentid = 1115, priority = 1, type = "Loot"}, -- Yojimbo Barding
 	},
 	bossids = {
-		7570, -- Yojimbo
+		7570, -- Yojimbo -- Stormblood Gilgamesh Card
 	},
-	forcemeleerange= {7570},
+	forcemeleerange = {7570},
 	enemytargetdistance = 50,
 	prioritytarget = {},
 	tankat = {

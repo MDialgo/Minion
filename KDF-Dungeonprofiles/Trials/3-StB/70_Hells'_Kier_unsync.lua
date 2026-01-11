@@ -1,5 +1,6 @@
 local tbl = {
 	name = "Hells' Kier",
+	mesh = "",
 	dutyid = 810,
 	level = 70,
 	expansion = 4,
@@ -7,11 +8,15 @@ local tbl = {
 	notes = "",
 	queuetype = 2,
 	FFA = true,
+	hacks = false,
+	requeuetimer = 10,
 	objectivedestinations = {
-		[1] = {objective = 1, pos = {x=99.99,y=0,z=89.98},},
+		[1] = {objective = 1, pos = {x = 99.99, y = 0, z = 89.98}},
 	},
 	interacts = {},
-	bossids = {},
+	bossids = {
+		7702, -- Suzaku -- Suzaku Card
+	},
 	forcemeleerange = {7702},
 	enemytargetdistance = 50,
 	--staybehindentity = {7702},
