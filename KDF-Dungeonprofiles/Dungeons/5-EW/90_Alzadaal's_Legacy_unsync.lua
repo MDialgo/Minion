@@ -29,8 +29,8 @@ local tbl = {
 	},
 	bossids = {
 		11241, -- Ambujam
-		2, -- Armored Chariot
-		3, -- Kapikulu -- Rampart Card
+		11239, -- Armored Chariot
+		11238, -- Kapikulu -- Rampart Card
 	},
 	forcemeleerange = {11238},
 	prioritytarget = {
