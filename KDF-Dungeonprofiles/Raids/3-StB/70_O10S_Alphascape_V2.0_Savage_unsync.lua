@@ -1,7 +1,7 @@
 local tbl = {
-	name = "O10N Alphascape V2.0",
+	name = "O10S Alphascape V2.0 (Savage)",
 	mesh = "Psiscape V2.0",
-	dutyid = 799, -- ID de la map
+	dutyid = 803,
 	level = 70,
 	expansion = 4,
 	creator = "Koyote#6642",
@@ -14,14 +14,13 @@ local tbl = {
 		[1] = {objective = 1, pos = {x=100,y= 0,z=100}},
 	},
 	interacts = {
-		[1] = {contentid = 1075, priority = 1, type = "Loot 1"},
-		[2] = {contentid = 1076, priority = 2, type = "Loot 2"},
-		[3] = {contentid = 1097, priority = 3, type = "Loot 3"},
+		[1] = {contentid = 1077, priority = 1, type = "Loot 1"}, -- Omega Head Gear Coffer (IL 400), Hand & Foot Coffers too
+		[2] = {contentid = 1078, priority = 2, type = "Loot 2"}, -- Omega Head Gear Coffer (IL 400), Hand & Foot Coffers too
 	},
 	bossids = {
-		7641, -- Midgardsormr
+		7641, -- Midgardsormr -- Alphascape Datalog v2.0
 	},
-	forcemeleerange= {}, -- ID monster
+	forcemeleerange= {},
 	enemytargetdistance = 50,
 	prioritytarget = {},
 	dontclearfriendlytargets = {},

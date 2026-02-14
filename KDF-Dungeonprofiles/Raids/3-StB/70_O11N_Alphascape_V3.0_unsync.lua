@@ -1,29 +1,31 @@
 local tbl = {
 	name = "O11N Alphascape V3.0",
-	mesh = "The Interdimensional Rift",
+	mesh = "The Interdimensional Rift2",
 	dutyid = 800, -- ID de la map
 	level = 70,
 	expansion = 4,
 	creator = "Koyote#6642",
 	notes = "Solo only possible as a Tank",
-	hacks = false,
 	queuetype = 2,
+	FFA = false,
+	hacks = false,
+	requeuetimer = 10,
 	objectivedestinations = {
 		[1] = {objective = 1, pos = {x=100,y= 0,z=100}},
 	},
-	forcemeleerange= {7695,7852}, -- ID monster
 	interacts = {
 		[1] = {contentid = 1080, priority = 1, type = "Loot 1"},
 		[2] = {contentid = 1079, priority = 2, type = "Loot 2"},
 		[3] = {contentid = 1099, priority = 3, type = "Loot 3"},
 	},
-	dontclearfriendlytargets = {7852},
+	forcemeleerange= {7695,7852}, -- ID monster
 	enemytargetdistance = 50,
 	prioritytarget = {
 		[1] = {contentid = 7696, priority = 1, type = "Punch"},
 		[2] = {contentid = 7695, priority = 2, type = "Omegay"},
 		[3] = {contentid = 7852, priority = 3, type = "Conductive"},
 	},
+	dontclearfriendlytargets = {7852},
 	tankat= {
 		--[1] = {contentid = 7695, frompercent = 100, topercent = 1, pos = {x = 101.5, y = 0, z = 87.5}, desc = "Tank Omega at this pos from 100-1%"},
 		[1] = {contentid = 7695, frompercent = 100, topercent = 1, pos = {x = 88.25, y = 0, z = 89.03}, desc = "Tank Omega at this pos from 100-1%"},
@@ -102,7 +104,7 @@ local tbl = {
 				[8] = {x = 111.47, y = 0, z = 89.03}, -- OK NE
 			},
 		},]]
-	},
+},
 	hasbuff = {},
 	overheadmarkers = {},
 	excludeavoid = {12907,12933,13075,13118,13119,13140,13155,1371},

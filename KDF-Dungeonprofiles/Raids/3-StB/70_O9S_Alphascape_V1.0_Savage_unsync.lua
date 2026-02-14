@@ -1,7 +1,7 @@
 local tbl = {
-	name = "O9N Alphascape V1.0",
+	name = "O9S Alphascape V1.0 (Savage)",
 	mesh = "Psiscape V1.0",
-	dutyid = 798, --  MAP ID
+	dutyid = 802,
 	level = 70,
 	expansion = 4,
 	creator = "Koyote#6642",
@@ -14,9 +14,11 @@ local tbl = {
 		[1] = {objective = 1, pos = {x=100,y= 0,z= 100}},
 	},
 	interacts = {
-		[1] = {contentid = 1072, priority = 1, type = "Loot 1"},
-		[2] = {contentid = 1071, priority = 2, type = "Loot 2"},
-		[3] = {contentid = 1098, priority = 3, type = "Loot 3"},
+		[1] = {contentid = 1073, priority = 1, type = "Loot 1"}, -- Omega Earring Coffer (IL 400), Neck, Wrist & Ring Coffers too
+		[2] = {contentid = 1074, priority = 2, type = "Loot 2"}, -- Omega Earring Coffer (IL 400), Neck, Wrist & Ring Coffers too
+	},
+	bossids = {
+		7693, -- Chaos -- Alphascape Datalog v1.0
 	},
 	forcemeleerange= {}, -- ID
 	enemytargetdistance = 100,
@@ -222,13 +224,60 @@ local tbl = {
 				[8] = {x = 118.53826141357,	y = 0,	z = 81.54711151123}, -- OK
 			},
 		},
-		[15] = {
-			castingid = 12624, -- Damning Edict OK
+	--[[	[15] = {
+			castingid = 12657, -- Damning Edict OK
 			type = "movebehind",
-		},
+			dist = 0,
+		},]]
 	},
 	hasbuff = {},
 	overheadmarkers = {},
+	reactions = {
+		[1] = {
+			name = "Damning Edict Immunity",
+			cause = [[
+				_DAMN_EDICT = _DAMN_EDICT or { t = 0 }
+				local now = (Now and Now()) or ((os and os.clock) and os.clock()*1000) or 0
+
+				-- Is the boss casting Damning Edict?
+				local casting = KitanoiFuncs.ScanForCaster2(12657)
+				if casting then
+					-- first time we see the cast this cycle: start timer
+					if _DAMN_EDICT.t == 0 then
+						_DAMN_EDICT.t = now
+					end
+				else
+					-- cast stopped / not happening: reset timer and bail
+					_DAMN_EDICT.t = 0
+					return false
+				end
+
+				-- wait ~2s after the cast started before we allow the reaction
+				if (now - _DAMN_EDICT.t) < 2000 then
+					return false
+				end
+
+				-- once the delay has passed, only fire if at least one immunity is ready
+				return (
+					(ActionList:Get(1,7548) and ActionList:Get(1,7548).usable and not ActionList:Get(1,7548).isoncd)
+					or
+					(ActionList:Get(1,7559) and ActionList:Get(1,7559).usable and not ActionList:Get(1,7559).isoncd)
+				)
+			]],
+			effect = [[
+				_DAMN_EDICT = _DAMN_EDICT or {}
+
+				if (ActionList:Get(1,7548) and ActionList:Get(1,7548).usable and not ActionList:Get(1,7548).isoncd) then
+					ActionList:Get(1,7548):Cast(Player.id)
+				elseif (ActionList:Get(1,7559) and ActionList:Get(1,7559).usable and not ActionList:Get(1,7559).isoncd) then
+					ActionList:Get(1,7559):Cast(Player.id)
+				end
+
+				-- reset timer so we don't spam on the same cast
+				_DAMN_EDICT.t = 0
+			]],
+		},
+	},
 	excludeavoid = {12681,12658},
 }
 

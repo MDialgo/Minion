@@ -1,0 +1,35 @@
+local tbl = {
+	name = "O6N Sigmascape V2.0",
+	mesh = "Sigmascape V2.0",
+	dutyid = 749,
+	level = 70,
+	expansion = 4,
+	creator = "Dialgo",
+	notes = "",
+	queuetype = 2,
+	FFA = false,
+	hacks = false,
+	requeuetimer = 10,
+	objectivedestinations = {
+		{objective = 1, pos = {x = 0, y = 0, z = -5}},
+	},
+	forcemeleerange = {7097},
+	interactdistance = 20,
+	interacts = {
+		[1] = {contentid = 1015, priority = 1, type = "Loot 1"},
+		[2] = {contentid = 1016, priority = 2, type = "Loot 2"},
+	},
+	incombatinteract = {},
+	enemytargetdistance = 30,
+	bossids = {7097},
+	prioritytargetdistance = 30,
+	prioritytarget = {},
+	tankat= {},
+	advancedavoid = {},
+	hasbuff = {},
+	overheadmarkers = {},
+	excludeavoid = {},
+	pullenemyoutofpuddle = false,
+}
+
+return tbl

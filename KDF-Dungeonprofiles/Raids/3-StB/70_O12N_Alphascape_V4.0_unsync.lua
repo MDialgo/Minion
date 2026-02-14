@@ -6,17 +6,19 @@ local tbl = {
 	expansion = 4,
 	creator = "Koyote#6642",
 	notes = "",
-	hacks = false,
 	queuetype = 2,
+	FFA = false,
+	hacks = false,
+	requeuetimer = 10,
 	objectivedestinations = {
 		[1] = {objective = 1, pos = {x=1000,y=0,z=100}},
 	},
-	forcemeleerange= {7633,7634}, -- 7633 = M, 7634 = F
 	interacts = {
 		[1] = {contentid = 1083, priority = 1, type = "Loot 1"},
 		[2] = {contentid = 1084, priority = 2, type = "Loot 2"},
 		[3] = {contentid = 1085, priority = 3, type = "Loot 3"},
 	},
+	forcemeleerange= {7633,7634}, -- 7633 = M, 7634 = F
 	enemytargetdistance = 50,
 	prioritytarget = {
 		--[1] = {contentid = 7633, priority = 1, desc="Omega M"},
@@ -31,7 +33,7 @@ local tbl = {
 		[2] = {who = "tank2", type = "tankat", pos = {x = 100.24755096436,	y = 0,	z = 117.30153656006}, contentid = 7634},
 		[3] = {who = "tank1", type = "forcetarget", contentid = 7633},
 		[4] = {who = "tank2", type = "forcetarget", contentid = 7634},
-	},]]
+},]]
 	useaction = {},
 	advancedavoid = {
 		[1] = {

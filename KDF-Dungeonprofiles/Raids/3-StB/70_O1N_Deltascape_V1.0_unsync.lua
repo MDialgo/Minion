@@ -7,15 +7,17 @@ local tbl = {
 	creator = "Koyote#6642 / Mist",
 	notes = "",
 	queuetype = 2,
+	FFA = false,
+	hacks = false,
 	requeuetimer = 10,
 	objectivedestinations = {
 		[1] = {objective = 1, pos = {x=100,y=0,z=100}},
 	},
-	forcemeleerange= {5629}, -- ID monster
 	interacts = {
 		[1] = {contentid = 925, priority = 1, type = "Loot 1"},
 		[2] = {contentid = 926, priority = 2, type = "Loot 2"},
 	},
+	forcemeleerange= {5629}, -- ID monster
 	enemytargetdistance = 50,
 	prioritytarget = {},
 	avoidentity = {

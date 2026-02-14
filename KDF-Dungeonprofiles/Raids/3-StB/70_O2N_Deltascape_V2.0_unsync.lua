@@ -7,18 +7,20 @@ local tbl = {
 	creator = "Koyote#6642",
 	notes = "",
 	queuetype = 2,
+	FFA = false,
+	hacks = false,
 	requeuetimer = 10,
 	objectivedestinations = {
 		[1] = {objective = 1, pos = {x = 0, y = 0.067253202199936, z = -15} },
 	},
-	forcemeleerange = {},
 	interactdistance = 20,
 	interacts = {
 		[1] = {contentid = 928, priority = 1, type = "Loot 1"},
 		[2] = {contentid = 927, priority = 2, type = "Loot 2"},
 	},
-	enemytargetdistance = 30,
 	bossids = {5631},
+	forcemeleerange = {},
+	enemytargetdistance = 30,
 	prioritytargetdistance = 10,
 	prioritytarget = {
 		[1] = {contentid = 5631, priority = 1, type = "Catastrophe"},
