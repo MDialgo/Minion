@@ -8,7 +8,7 @@
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Dungeons | 31/31 | 18/18 | 15/15 | 7/13 | 4/13 | 0/13 |
 | Trials | 26/26 | 14/14 | 17/17 | 4/15 | 2/15 | 0/14 |
-| Raids | 4/20  | 0/27  | 0/27  | 0/27 | 0/27 | 0/27 |
+| Raids | 9/20  | 10/27  | 15/27  | 0/27 | 0/27 | 0/27 |
 
 ## Notes
 * If you have contributions, contact me in the Dungeons Framework Channel of Kitanoi's Discord
