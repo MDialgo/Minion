@@ -14,6 +14,7 @@
 * If you have contributions, contact me in the Dungeons Framework Channel of Kitanoi's Discord
 
 ## Changelog
+* 15/02/2026 Dungeons: Leveling Roulette Dungeons from ARR to STB have a Forceload Mesh for when the profile is loaded manually after entering the duty
 * 14/02/2026 Raids: Added Sigmascape V2 and V3, Added Alphascape V1, V2, and V4 Savage
   * Some formatting update on the whole folder
 * 10/01/2026 Dungeons: Added Squadron Folder to Dungeons (15/15)
