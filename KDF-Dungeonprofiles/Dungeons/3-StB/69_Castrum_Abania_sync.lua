@@ -39,21 +39,21 @@ local tbl = {
 	},
 	--dontclearfriendlytargets = {6266}, -- Magna Roader cannons
 	tankat= {},
-	incombatinteract = {
-	--[[	[1] = { -- Magna Roader cannons
+	--[[incombatinteract = {
+		[1] = { -- Magna Roader cannons
 			interactid = 6266,
 			type = "interact",
 			who = "closest",
-		},]]
-	},
-	useaction = {
-	--[[	[1] = {
+		},
+	},]]
+	--[[useaction = {
+		[1] = {
 			contentid = 6263,
 			actiontree = 1,
 			actionid = 7962,
 			target = "enemypos",
-		},]]
-	},
+		},
+	},]]
 	advancedavoid = {
 		[1] = {castingid = 33464, type = "multifixed", -- Subject Number XXIV : Thunder II
 			pos = {
@@ -62,6 +62,12 @@ local tbl = {
 				[3] = {x= 10.48,y= 14.18,z= 174.98},
 				[4] = {x= 21.99,y= 14.18,z= 186.48}
 			}
+		},
+		[2] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[Dungeon] Castrum Abania")
+				end
+			]]
 		},
 	},
 	overheadmarkers = {

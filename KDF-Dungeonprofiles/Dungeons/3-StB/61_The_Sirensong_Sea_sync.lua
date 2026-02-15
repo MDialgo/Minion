@@ -48,6 +48,12 @@ local tbl = {
 		[2] = {castingid = 8041, type = "singlefixed", pos = {[1] = {x = -44.66, y = 7.75, z = 464.67}}},
 		[3] = {castingid = 8037, type = "singlefixed", pos = {[1] = {x = -44.66, y = 7.75, z = 464.67}}},
 		[4] = {castingid = 8038, type = "singlefixed", pos = {[1] = {x = -44.66, y = 7.75, z = 464.67}}},
+		[5] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[HM] - The Sirensong Sea")
+				end
+			]]
+		},
 	},
 	overheadmarkers = {
 		[1] = {

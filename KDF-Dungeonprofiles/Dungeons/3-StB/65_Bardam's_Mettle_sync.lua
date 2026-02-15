@@ -54,6 +54,12 @@ local tbl = {
 		},
 		[2] = {castingid = 9591, type = "movebehind"},
 		[3] = {args = {dist = 2, entityone = 6692, entitytwo = 6663}, castingid = 9602, desc = "Meteor Impact", type = "los"},
+		[4] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[Dungeon] Bardam's Mettle")
+				end
+			]]
+		},
 		--[3] = {type = "custom", customdetails = "libraryfunction", functioncode = "RinnLib.runBardamsMettle()"},
 	},
 	overheadmarkers = {

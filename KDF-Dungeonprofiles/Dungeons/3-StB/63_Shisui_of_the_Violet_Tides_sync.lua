@@ -54,6 +54,12 @@ local tbl = {
 				[4] = {x = 10.04, y = 27.4, z = -198.2}
 			}
 		},
+		[2] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[HM] - Shisui of the Violet Tides")
+				end
+			]]
+		},
 	},
 	hasbuff = {
 		[1] = {type = "move", buffid = 1259,
@@ -126,7 +132,7 @@ local tbl = {
 			},
 			timetoreturn = 4
 		},
-},
+	},
 	excludeavoid = {8070,8069}, --Melee DPS seems stuck in place due to these AOE
 }
 

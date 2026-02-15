@@ -1,6 +1,6 @@
 local tbl = {
 	name = "Doma Castle",
-	mesh = "[Dungeon] Doma Castle",
+	mesh = "[Dungeon] Doma Castle v2",
 	dutyid = 1144,
 	level = 67,
 	expansion = 4,
@@ -41,6 +41,14 @@ local tbl = {
 	prioritytarget = {},
 	tankat = {
 		[1] = {contentid = 6203, frompercent = 100, topercent = 0, pos = {x = -240.48, y = 45.60, z = 130.39}},
+	},
+	advancedavoid = {
+		[1] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[Dungeon] Doma Castle v2")
+				end
+			]]
+		},
 	},
 	overheadmarkers = {
 		[1] = {
