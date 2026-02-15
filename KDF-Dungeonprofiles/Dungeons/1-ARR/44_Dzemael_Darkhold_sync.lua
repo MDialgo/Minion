@@ -41,7 +41,14 @@ local tbl = {
 	},
 	ignoretarget = {},
 	tankat = {},
-	advancedavoid = {},
+	advancedavoid = {
+		[1] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[Dungeon] Dzemael Darkhold v2")
+				end
+			]]
+		},
+	},
 	hasbuff = {},
 	overheadmarkers = {},
 	excludeavoid = {},

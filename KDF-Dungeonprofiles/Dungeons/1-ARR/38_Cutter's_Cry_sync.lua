@@ -46,7 +46,14 @@ local tbl = {
 		[1] = {contentid = 1589, frompercent = 100, topercent = 95, pos = { x = -143.08, y = -4.24, z = 139.64}, desc = "tank Sandworm boss away from party from 100-95%"},
 		[2] = {contentid = 1590, frompercent = 100, topercent = 1, pos = { x = -180.1, y = -4.90, z = -205.3}, desc = "tank Chimera boss away from party from 100-1%"},
 	},
-	advancedavoid = {},
+	advancedavoid = {
+		[1] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[Dungeon] Cutter's Cry v2")
+				end
+			]]
+		},
+	},
 	overheadmarkers = {},
 	puddledata = {},
 }

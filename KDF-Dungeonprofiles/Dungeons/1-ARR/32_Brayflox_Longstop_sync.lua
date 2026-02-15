@@ -47,7 +47,14 @@ local tbl = {
 		[5] = {contentid = 1287, priority = 2, type = "Gully Galago"},
 		[6] = {contentid = 1288, priority = 3, type = "Raveled Raincatcher"},
 	},
-	advancedavoid = {},
+	advancedavoid = {
+		[1] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[Dungeon] Brayflox's Longstop v2")
+				end
+			]]
+		},
+	},
 	hasbuff = {},
 	overheadmarkers = {},
 	excludeavoid = {563},

@@ -40,7 +40,14 @@ local tbl = {
 	prioritytarget = {
 		[1] = {contentid = 456, priority = 1, type = "Imps"},
 	},
-	advancedavoid = {},
+	advancedavoid = {
+		[1] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[HM] - The Tam-Tara Deepcroft v2")
+				end
+			]]
+		},
+	},
 	overheadmarkers = {},
 }
 

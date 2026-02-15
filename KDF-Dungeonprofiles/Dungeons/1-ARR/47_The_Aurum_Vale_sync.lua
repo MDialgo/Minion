@@ -39,7 +39,14 @@ local tbl = {
 	tankat = {},
 	faceenemyaway = {},
 	useaction = {},
-	advancedavoid = {},
+	advancedavoid = {
+		[1] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[Dungeon] Aurum Vale v2")
+				end
+			]]
+		},
+	},
 	hasbuff = {
 		[1] = {
 			buffid = 302,

@@ -1,6 +1,6 @@
 local tbl = {
 	name = "Sastasha",
-	mesh = "[Dungeon] Sastasha",
+	mesh = "[HM] - Sastasha",
 	dutyid = 1036,
 	level = 15,
 	expansion = 2,
@@ -43,7 +43,14 @@ local tbl = {
 	},
 	enemytargetdistance = 35,
 	prioritytarget = {},
-	advancedavoid = {},
+	advancedavoid = {
+		[1] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[HM] - Sastasha")
+				end
+			]]
+		},
+	},
 	overheadmarkers = {},
 	enemylos = true,
 }

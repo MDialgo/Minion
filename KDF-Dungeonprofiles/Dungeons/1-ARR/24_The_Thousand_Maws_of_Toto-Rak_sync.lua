@@ -76,6 +76,12 @@ local tbl = {
 				end
 			]]
 		},
+		[2] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[HM] - The Thousand Maws of Toto-Rak v2")
+				end
+			]]
+		},
 	},
 	overheadmarkers = {},
 	excludeavoid = {},

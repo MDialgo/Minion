@@ -1,6 +1,6 @@
 local tbl = {
 	name = "The Sunken Temple of Qarn",
-	mesh = "[Dungeon] The Sunken Temple of Qarn",
+	mesh = "[Dungeon] The Sunken Temple of Qarn v2",
 	dutyid = 1267,
 	level = 35,
 	expansion = 2,
@@ -86,6 +86,12 @@ local tbl = {
 				end
 			]]
 		},
+		[3] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[Dungeon] The Sunken Temple of Qarn v2")
+				end
+			]]
+		},
 	},
 	hasbuff = {},
 	overheadmarkers = {},
@@ -93,6 +99,5 @@ local tbl = {
 	pullenemyoutofpuddle = false,
 	enemylos = true,
 }
-
 
 return tbl

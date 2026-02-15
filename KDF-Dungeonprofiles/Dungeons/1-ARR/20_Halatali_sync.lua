@@ -87,6 +87,12 @@ local tbl = {
 				end
 			]],
 		},
+		[2] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[Dungeon] Halatali v2")
+				end
+			]]
+		},
 	},
 	reactions = {},
 	overheadmarkers = {},

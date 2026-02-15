@@ -41,13 +41,12 @@ local tbl = {
 	},
 	faceenemyaway = {1680,1677},
 	advancedavoid = {
-	--	[1] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode =
-		--[[
+		[1] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode =	[[
 				function customfunction()
 					KitanoiFuncs.LoadMesh("[Dungeon] Stone Vigil")
 				end
 			]]
-	--	},
+		},
 		[2] = {type = "custom", customdetails = "function", functionname = "Maelstroms Evade", functioncode = [[
 				function customfunction()
 					local maelstroms = MEntityList("contentid=9910,maxdistance=30")

@@ -81,6 +81,12 @@ local tbl = {
 				end
 			]]
 		},
+		[2] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[Dungeon] Haukke Manor")
+				end
+			]]
+		},
 	},
 	hasbuff = {},
 	overheadmarkers = {},
