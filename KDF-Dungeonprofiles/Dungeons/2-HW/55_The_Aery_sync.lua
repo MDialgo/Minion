@@ -48,12 +48,12 @@ local tbl = {
 		[2] = {contentid = 3458, desc = "tank last boss away from party from 100-0%", frompercent = 100, pos = {x = 30.38, y = 148.39, z = -281.19}, topercent = 0},
 	},
 	advancedavoid = {
-		--[1] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
-		--		function customfunction()
-		--			KitanoiFuncs.LoadMesh("[Dungeon] The Aery")
-		--		end
-		--	]]
-		--},
+		[1] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[Dungeon] The Aery")
+				end
+			]]
+		},
 		[2] = {castingid = 3910, desc = "last boss hide with estenien", pos = {[1] = {x = 38.08, y = 148.39, z = -244.93}}, type = "singlefixed"},
 		[3] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
 				function customfunction()

@@ -77,12 +77,12 @@ local tbl = {
 				end
 			]]
 		},
-		--[3] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
-		--		function customfunction()
-		--			KitanoiFuncs.LoadMesh("[HM] - Sohm Al")
-		--		end
-		--	]]
-		--},
+		[3] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[HM] - Sohm Al")
+				end
+			]]
+		},
 		[4] = {castingid = 3809, creatordesc = "", type = "duty"},
 	},
 	hasbuff = {},

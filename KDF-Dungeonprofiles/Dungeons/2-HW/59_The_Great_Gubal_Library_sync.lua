@@ -1,6 +1,6 @@
 local tbl = {
 	name = "The Great Gubal Library",
-	mesh = "",
+	mesh = "[Dungeon] The Great Gubal Library v2",
 	dutyid = 1109,
 	level = 59,
 	expansion = 3,
@@ -46,6 +46,12 @@ local tbl = {
 			}
 		},
 		[2] = {castingid = 3518, type = "movebehind"}, -- Demon Tome: Disclosure
+		[3] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[Dungeon] The Great Gubal Library v2")
+				end
+			]]
+		},
 	},
 }
 

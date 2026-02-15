@@ -55,12 +55,12 @@ local tbl = {
 	advancedavoid = {
 		[1] = {args = {dist = 2, entityone = 4381, entitytwo = 3410}, castingid = 3695, desc = "Whirling Gaol", type = "los"},
 		[2] = {args = {dist = 2, entityone = 3409, entitytwo = 3410}, castingid = 3696, desc = "Winter", type = "los"},
-		--[3] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
-		--		function customfunction()
-		--			KitanoiFuncs.LoadMesh("[Dungeon] Dusk Vigil")
-		--		end
-		--	]]
-		--},
+		[3] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[Dungeon] Dusk Vigil")
+				end
+			]]
+		},
 	},
 	hasbuff = {},
 	overheadmarkers = {

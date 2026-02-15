@@ -43,12 +43,12 @@ local tbl = {
 	tankat = {},
 	advancedavoid = {
 		[1] = {customdetails = "libraryfunction", functioncode = "KitanoiFuncs.TheVault()", type = "custom"},
-		--[2] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
-		--		function customfunction()
-		--			KitanoiFuncs.LoadMesh("[HM] - The Vault v2")
-		--		end
-		--	]]
-		--},
+		[2] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
+				function customfunction()
+					KitanoiFuncs.LoadMesh("[HM] - The Vault v2")
+				end
+			]]
+		},
 	},
 	overheadmarkers = {},
 	staybehindentity = {3639},
