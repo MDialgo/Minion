@@ -34,7 +34,7 @@ local tbl = {
 	},
 	forcemeleerange = {},
 	enemytargetdistance = 40,
-	prioritytargetdistance = 40,
+	prioritytargetdistance = 50,
 	prioritytarget = {
 		[1] = {contentid = 2154, priority = 1, type = "Corrupted Crystal"},
 		[2] = {contentid = 1396, priority = 2, type = "Batraal"},
