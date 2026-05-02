@@ -26,13 +26,13 @@ local tbl = {
 		[6] = {contentid = 2000416, req = {complete = true, objective = 2}, priority = 6, type = "The Fruit of Knowledge"},
 		[7] = {contentid = 137, priority = 7, type = "Boss 2 Loot"},
 		--[8] = {contentid = 2000423, req = {complete = true, objective = 3}, priority = 8, type = "Stone Pedestal - Gem of Affluence"}, -- 1
-		--[9] = {contentid = 129, priority = 9, type = "Statuette Loot 1"}, -- Shards -- Belah'dian Glass
+		--[9] = {contentid = 129, priority = 9, type = "Statuette Loot 1"}, -- Shards -- Belah'dian Glass -- Out of Mesh WIP
 		--[10] = {contentid = 2000425, req = {complete = true, objective = 3}, priority = 10, type = "Stone Pedestal - Helm of Might"}, -- 0
-		--[11] = {contentid = 128, priority = 11, type = "Statuette Loot 2"}, -- Shards -- Belah'dian Glass
+		--[11] = {contentid = 128, priority = 11, type = "Statuette Loot 2"}, -- Shards -- Belah'dian Glass -- Out of Mesh WIP
 		--[12] = {contentid = 2000421, req = {complete = true, objective = 3}, priority = 12, type = "Stone Pedestal - Fruit of Knowledge"}, -- 3
-		--[13] = {contentid = 131, priority = 13, type = "Statuette Loot 3"}, -- Shards -- Belah'dian Glass
-		[14] = {contentid = 2000419, req = {complete = true, objective = 3}, priority = 14, type = "Stone Pedestal - Flame of Magic"}, -- 2
-		[15] = {contentid = 130, priority = 15, type = "Statuette Loot 4"}, -- Shards -- Belah'dian Glass
+		--[13] = {contentid = 131, priority = 13, type = "Statuette Loot 3"}, -- Shards -- Belah'dian Glass -- Out of Mesh WIP
+		--[14] = {contentid = 2000419, req = {complete = true, objective = 3}, priority = 14, type = "Stone Pedestal - Flame of Magic"}, -- 2
+		--[15] = {contentid = 130, priority = 15, type = "Statuette Loot 4"}, -- Shards -- Belah'dian Glass -- Out of Mesh WIP
 		[16] = {contentid = 2000427, req = {complete = true, objective = 3}, priority = 16, type = "Left Pan - Flame of Magic"}, -- 2
 		[17] = {contentid = 2000428, req = {complete = true, objective = 3}, priority = 17, type = "Right Pan - Fruit of Knowledge"}, -- 2
 		[18] = {contentid = 2000658, req = {complete = true, objective = 3}, priority = 18, type = "The Scales of Judgment"},
