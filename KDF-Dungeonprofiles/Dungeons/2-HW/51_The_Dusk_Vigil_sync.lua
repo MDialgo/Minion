@@ -1,7 +1,7 @@
 local tbl = {
 	name = "The Dusk Vigil",
 	mesh = "[Dungeon] Dusk Vigil",
-	dutyid = 434,
+	dutyid = 1366,
 	level = 51,
 	expansion = 3,
 	creator = "Kitanoi",

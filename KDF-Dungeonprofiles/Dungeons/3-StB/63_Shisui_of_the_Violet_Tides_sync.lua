@@ -1,7 +1,7 @@
 local tbl = {
 	name = "Shisui of the Violet Tides",
-	mesh = "[HM] - Shisui of the Violet Tides",
-	dutyid = 616,
+	mesh = "[Dungeon] Shisui of the Violet Tides v2",
+	dutyid = 1367,
 	level = 63,
 	expansion = 4,
 	creator = "Rinn",
@@ -56,7 +56,7 @@ local tbl = {
 		},
 		[2] = {type = "custom", customdetails = "function", functionname = "customfunction", functioncode = [[
 				function customfunction()
-					KitanoiFuncs.LoadMesh("[HM] - Shisui of the Violet Tides")
+					KitanoiFuncs.LoadMesh("[Dungeon] Shisui of the Violet Tides v2")
 				end
 			]]
 		},
